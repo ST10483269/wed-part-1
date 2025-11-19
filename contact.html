@@ -4,115 +4,324 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - RiseUp Youth Foundation</title>
+    <meta name="description" content="Get in touch with RiseUp Youth Foundation. Contact our team for youth program information, volunteer opportunities, donations, or partnership enquiries in South Africa.">
+    <meta name="keywords" content="contact RiseUp Youth Foundation, South Africa youth programs, volunteer opportunities, donate to youth, partnership enquiries">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="logo">
             <h1>RiseUp Youth Foundation</h1>
+            <p>Empowering Youth, Building Futures</p>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="Home.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="programspage.html">Programs</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="contact-intro">
-            <h2>Contact Us</h2>
-            <p>We'd love to hear from you. Get in touch with us through any of the following methods.</p>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero">
+            <img src="images/positive-teamwork.jpg" alt="RiseUp team available to support your inquiries" width="100%">
+            <h1>We're Here to Help: Get in Touch Today</h1>
+            <p>Your questions, ideas, and feedback are essential to our mission. Whether you're a youth seeking opportunities, a potential volunteer, a donor, or a community partner, we're ready to connect and collaborate.</p>
         </section>
 
-        <section class="contact-details">
-            <h3>Contact Information</h3>
-            <div class="contact-method">
-                <h4>Email</h4>
-                <p>info@riseupyouth.org</p>
-            </div>
-            <div class="contact-method">
-                <h4>Phone</h4>
-                <p>+27 31 123 4567</p>
-            </div>
-            <div class="contact-method">
-                <h4>Address</h4>
-                <p>123 Empowerment Street</p>
-                <p>Durban, South Africa</p>
-            </div>
-            <div class="contact-method">
-                <h4>Office Hours</h4>
-                <p>Monday-Friday: 9am-5pm</p>
-                <p>Saturday: 10am-2pm</p>
-                <p>Sunday: Closed</p>
+        <!-- Quick Contact Options -->
+        <section class="quick-contact">
+            <div class="container">
+                <h2>Multiple Ways to Reach Us</h2>
+                <p>Choose the communication method that works best for you. Our team responds to all inquiries within 24-48 hours.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3>📞 Phone Contact</h3>
+                        <img src="images/mentorship.jpg" alt="Friendly phone support available" width="200">
+                        <p><strong>Main Office:</strong> +27 31 123 4567</p>
+                        <p><strong>Program Inquiries:</strong> +27 31 123 4568</p>
+                        <p><strong>Emergency Support Line:</strong> +27 31 123 4569 (24/7 for youth in crisis)</p>
+                        <p><strong>Office Hours:</strong> Monday-Friday, 8:30 AM - 5:00 PM</p>
+                        <a href="tel:+27311234567" class="contact-button">Call Us Now</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>📧 Email Communication</h3>
+                        <img src="images/group-study.jpg" alt="Email communication channels" width="200">
+                        <p><strong>General Inquiries:</strong> info@riseupyouth.org</p>
+                        <p><strong>Program Applications:</strong> applications@riseupyouth.org</p>
+                        <p><strong>Volunteer Coordination:</strong> volunteer@riseupyouth.org</p>
+                        <p><strong>Partnership Opportunities:</strong> partnerships@riseupyouth.org</p>
+                        <p><strong>Donor Relations:</strong> donors@riseupyouth.org</p>
+                        <a href="mailto:info@riseupyouth.org" class="contact-button">Send an Email</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <h3>💬 Social Media</h3>
+                        <img src="images/teenager-discussion.jpg" alt="Connect with us on social media" width="200">
+                        <p>Follow us for daily updates, success stories, and immediate interaction:</p>
+                        <div class="social-links">
+                            <a href="https://facebook.com/riseupyouth" class="social-button">Facebook</a>
+                            <a href="https://instagram.com/riseupyouth" class="social-button">Instagram</a>
+                            <a href="https://twitter.com/riseupyouth" class="social-button">Twitter</a>
+                            <a href="https://linkedin.com/company/riseupyouth" class="social-button">LinkedIn</a>
+                        </div>
+                        <p><strong>Response Time:</strong> Typically within a few hours during business hours</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="contact-form">
-            <h3>Send Us a Message</h3>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <!-- Main Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <div class="form-container">
+                    <div class="form-intro">
+                        <img src="images/community-volunteering.jpg" alt="Our team ready to respond to your message" width="300">
+                        <p>Our contact form is the most efficient way to ensure your inquiry reaches the right team member. Please provide detailed information so we can serve you better.</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="contact-reason">I'm contacting regarding:</label>
+                            <select id="contact-reason" name="contact-reason" required>
+                                <option value="">Please select a category</option>
+                                <option value="program-inquiry">Program Information/Application</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="donation">Donation/Support</option>
+                                <option value="partnership">Partnership/Collaboration</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="general">General Information</option>
+                                <option value="feedback">Feedback/Suggestions</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="organization">Organization (if applicable)</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please provide detailed information about your inquiry..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="how-heard">How did you hear about RiseUp Youth Foundation?</label>
+                            <select id="how-heard" name="how-heard">
+                                <option value="">Please select</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="friend-family">Friend or Family</option>
+                                <option value="event">Community Event</option>
+                                <option value="media">News Article or Media</option>
+                                <option value="partner">Partner Organization</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Yes, I would like to receive updates about programs and opportunities (optional)</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="contact-reason">Reason for Contact:</label>
-                    <select id="contact-reason" name="contact-reason">
-                        <option value="general">General Inquiry</option>
-                        <option value="volunteer">Volunteer Opportunity</option>
-                        <option value="donation">Donation</option>
-                        <option value="partnership">Partnership</option>
-                        <option value="program">Program Information</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+            </div>
         </section>
 
-        <section class="location-map">
-            <h3>Our Location</h3>
-            <div class="map-placeholder">
-                <p>Map would be embedded here</p>
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions. Can't find what you're looking for? <a href="#contact-form">Use our contact form above.</a></p>
+                
+                <div class="faq-grid">
+                    <div class="faq-category">
+                        <h3>🤝 Volunteer Questions</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">What's the time commitment for volunteering?</div>
+                            <div class="faq-answer">
+                                <p>It varies by role. Mentors commit to 4-6 hours monthly for 6+ months. Skills-based volunteering can be project-based. Event support is flexible. We work with your availability.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Do I need specific qualifications to volunteer?</div>
+                            <div class="faq-answer">
+                                <p>For mentorship roles, we prefer 2+ years of professional experience. For other roles, enthusiasm and commitment are most important. We provide training for all volunteers.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I volunteer remotely?</div>
+                            <div class="faq-answer">
+                                <p>Yes! We have remote opportunities in social media, content creation, administrative support, and virtual mentorship.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>🎓 Program Questions</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">Who is eligible for your programs?</div>
+                            <div class="faq-answer">
+                                <p>South African youth aged 16-25, particularly from marginalized communities. We prioritize those with limited access to opportunities. No prior experience is required.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Are your programs free?</div>
+                            <div class="faq-answer">
+                                <p>Yes, all our programs are completely free for participants. We're funded through donations, grants, and partnerships to ensure accessibility.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">How do I apply for programs?</div>
+                            <div class="faq-answer">
+                                <p>Complete our online application form, attend an information session, and participate in an interview. Visit our <a href="programs.html">Programs page</a> for details.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-category">
+                        <h3>💝 Donation Questions</h3>
+                        <div class="faq-item">
+                            <div class="faq-question">How are my donations used?</div>
+                            <div class="faq-answer">
+                                <p>80% goes directly to program delivery, 12% to operational costs, and 8% to fundraising. We provide detailed financial reports to all donors.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Is my donation tax-deductible?</div>
+                            <div class="faq-answer">
+                                <p>Yes, we're a registered NPO (123-456) and PBO (930123456). Donations are tax-deductible in South Africa. We provide receipts for all contributions.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I specify how my donation is used?</div>
+                            <div class="faq-answer">
+                                <p>Absolutely! You can designate donations to specific programs (Digital Skills, Mentorship, Mental Wellness) or leave it unrestricted for greatest need.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emergency Support -->
+        <section class="emergency-support">
+            <div class="container">
+                <h2>🚨 Emergency Support for Youth</h2>
+                <div class="emergency-content">
+                    <img src="images/teenager-discussion.jpg" alt="Confidential support available" width="300">
+                    <div class="emergency-text">
+                        <p>If you are a young person in crisis or need immediate support, we're here for you. Our emergency services are confidential, free, and available 24/7.</p>
+                        <div class="emergency-contacts">
+                            <p><strong>Crisis Support Line:</strong> +27 31 123 4569 (24/7)</p>
+                            <p><strong>Emergency Text Line:</strong> TEXT "SUPPORT" to 31000</p>
+                            <p><strong>Immediate Counseling:</strong> Available within 2 hours of contact</p>
+                        </div>
+                        <p><strong>Services include:</strong> Crisis counseling, mental health support, safety planning, resource connection, and follow-up care.</p>
+                        <a href="tel:+27311234569" class="emergency-button">Call Emergency Support Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Commitment -->
+        <section class="response-commitment">
+            <div class="container">
+                <h2>Our Response Commitment to You</h2>
+                <div class="commitment-content">
+                    <img src="images/group-study.jpg" alt="Our team committed to timely responses" width="400">
+                    <div class="commitment-text">
+                        <p>At RiseUp Youth Foundation, we believe every inquiry deserves a thoughtful, timely response. Here's what you can expect when you contact us:</p>
+                        <ul>
+                            <li><strong>24-48 Hour Response:</strong> Initial response to all inquiries within two business days</li>
+                            <li><strong>Personalized Attention:</strong> Your message goes to a real person, not an automated system</li>
+                            <li><strong>Follow-Through:</strong> We ensure your questions are fully answered and needs addressed</li>
+                            <li><strong>Confidentiality:</strong> All communications are handled with discretion and respect</li>
+                            <li><strong>Multiple Languages:</strong> Support available in English, isiZulu, and Afrikaans</li>
+                        </ul>
+                        <p>Your voice matters to us. We're not just building programs—we're building relationships.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: info@riseupyouth.org</p>
-            <p>Phone: +27 31 123 4567</p>
-            <p>Address: 123 Empowerment Street, Durban, South Africa</p>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact RiseUp Youth Foundation</h3>
+                <p>Email: info@riseupyouth.org</p>
+                <p>Phone: +27 31 123 4567</p>
+                <p>Address: 123 Empowerment Street, Durban, South Africa</p>
+                <p>Office Hours: Monday-Friday 8:30am-5:00pm</p>
+            </div>
+
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programspage.html">Programs</a></li>
+                    <li><a href="getinvolved.html">Get Involved</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>Stay Connected</h3>
+                <p>Subscribe for updates, success stories, and community impact reports.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
-        <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+
         <div class="legal">
-            <p>NPO Registration: 123-456</p>
-            <p>PBO Number: 930123456</p>
+            <p>NPO Registration: 123-456 | PBO Number: 930123456</p>
             <p>&copy; 2025 RiseUp Youth Foundation. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="Javascript/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://st10483269.github.io/wed-part-1/sitemap.xml
+
+# Allow all main pages
+Allow: /Home.html
+Allow: /about.html
+Allow: /programspage.html
+Allow: /getinvolved.html
+Allow: /contact.html
+Allow: /enquiry.html
+
+# Allow assets
+Allow: /css/
+Allow: /images/
+Allow: /Javascript/
+
+# Disallow admin or private areas (none currently)
+# Disallow: /admin/
+
+# Crawl delay (optional)
+# Crawl-delay: 1

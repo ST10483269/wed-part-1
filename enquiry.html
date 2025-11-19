@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquire About Programs - RiseUp Youth Foundation</title>
+    <meta name="description" content="Enquire about our youth programs, volunteer opportunities, or partnership possibilities. Get information about our Digital Skills Academy, Mentorship Program, and Mental Wellness Initiative.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>RiseUp Youth Foundation</h1>
+            <p>Empowering Youth, Building Futures</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programspage.html">Programs</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Enquiry Hero Section -->
+        <section class="enquiry-hero">
+            <img src="images/community-volunteering.jpg" alt="Youth discussing program opportunities with mentors" width="100%">
+            <h1>Start Your Journey With Us</h1>
+            <p>Interested in our programs, volunteer opportunities, or partnership possibilities? Complete the form below and our team will get back to you with detailed information and next steps.</p>
+        </section>
+
+        <!-- Enquiry Form Section -->
+        <section class="enquiry-form-section">
+            <div class="container">
+                <h2>Program & Opportunity Enquiry</h2>
+                <p>Fill out the form below and we'll contact you within 24-48 hours with more information.</p>
+                
+                <div class="form-container">
+                    <div class="form-intro">
+                        <img src="images/mentorship.jpg" alt="Our team ready to help with your enquiry" width="300">
+                        <h3>We're Here to Help You Choose</h3>
+                        <p>Not sure which program is right for you? Our team will assess your interests, skills, and goals to recommend the best opportunities for your growth and development.</p>
+                    </div>
+                    
+                    <form class="enquiry-form" id="enquiryForm" action="#" method="POST">
+                        <!-- Enquiry Type -->
+                        <div class="form-group">
+                            <label for="enquiry-type">I'm interested in: *</label>
+                            <select id="enquiry-type" name="enquiry-type" required>
+                                <option value="">Please select an option</option>
+                                <option value="digital-skills">Digital Skills Academy</option>
+                                <option value="mentorship">Youth Mentorship Program</option>
+                                <option value="mental-wellness">Mental Wellness Initiative</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="partnership">Partnership/Collaboration</option>
+                                <option value="other">Other Program Information</option>
+                            </select>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiry-first-name">First Name *</label>
+                                <input type="text" id="enquiry-first-name" name="first-name" required minlength="2">
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiry-last-name">Last Name *</label>
+                                <input type="text" id="enquiry-last-name" name="last-name" required minlength="2">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiry-email">Email Address *</label>
+                                <input type="email" id="enquiry-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiry-phone">Phone Number *</label>
+                                <input type="tel" id="enquiry-phone" name="phone" required pattern="[+]?[0-9\s\-\(\)]{10,}">
+                            </div>
+                        </div>
+
+                        <!-- Additional Information -->
+                        <div class="form-group">
+                            <label for="enquiry-age">Age</label>
+                            <input type="number" id="enquiry-age" name="age" min="16" max="25">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiry-location">Location/Community *</label>
+                            <input type="text" id="enquiry-location" name="location" required placeholder="e.g., Durban Central, Pietermaritzburg, Richards Bay">
+                        </div>
+
+                        <!-- Program Specific Questions -->
+                        <div class="form-group">
+                            <label for="enquiry-background">Current Education/Employment Status</label>
+                            <select id="enquiry-background" name="background">
+                                <option value="">Please select</option>
+                                <option value="high-school">High School Student</option>
+                                <option value="university">University/College Student</option>
+                                <option value="employed">Employed</option>
+                                <option value="unemployed">Unemployed</option>
+                                <option value="self-employed">Self-Employed</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="enquiry-experience">Relevant Experience/Skills</label>
+                            <textarea id="enquiry-experience" name="experience" rows="3" placeholder="Briefly describe any relevant experience, skills, or interests..."></textarea>
+                        </div>
+
+                        <!-- Availability -->
+                        <div class="form-group">
+                            <label for="enquiry-availability">Availability</label>
+                            <select id="enquiry-availability" name="availability">
+                                <option value="">Please select</option>
+                                <option value="full-time">Full-time</option>
+                                <option value="part-time">Part-time</option>
+                                <option value="weekends">Weekends Only</option>
+                                <option value="evenings">Evenings Only</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <!-- Detailed Message -->
+                        <div class="form-group">
+                            <label for="enquiry-message">Your Questions or Specific Requirements *</label>
+                            <textarea id="enquiry-message" name="message" rows="6" required placeholder="Please provide details about what you're looking for, any specific questions you have, and what you hope to achieve..."></textarea>
+                        </div>
+
+                        <!-- How Heard -->
+                        <div class="form-group">
+                            <label for="enquiry-how-heard">How did you hear about us?</label>
+                            <select id="enquiry-how-heard" name="how-heard">
+                                <option value="">Please select</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="friend-family">Friend or Family</option>
+                                <option value="school">School/Educational Institution</option>
+                                <option value="community-center">Community Center</option>
+                                <option value="search-engine">Search Engine</option>
+                                <option value="event">Community Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Consent and Newsletter -->
+                        <div class="form-group">
+                            <input type="checkbox" id="enquiry-consent" name="consent" required>
+                            <label for="enquiry-consent">I consent to RiseUp Youth Foundation contacting me regarding my enquiry and processing my information in accordance with their privacy policy. *</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="enquiry-newsletter" name="newsletter">
+                            <label for="enquiry-newsletter">Yes, I would like to receive updates about programs, events, and opportunities (optional)</label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps Section -->
+        <section class="next-steps">
+            <div class="container">
+                <h2>What Happens After You Enquire?</h2>
+                <div class="steps-grid">
+                    <div class="step">
+                        <h3>1. Initial Contact</h3>
+                        <p>Our team will contact you within 24-48 hours to discuss your enquiry and answer initial questions.</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. Personalized Assessment</h3>
+                        <p>We'll assess your interests, skills, and goals to recommend the most suitable opportunities.</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. Program Details</h3>
+                        <p>You'll receive detailed information about program schedules, requirements, and benefits.</p>
+                    </div>
+                    <div class="step">
+                        <h3>4. Application Support</h3>
+                        <p>If you decide to proceed, we'll guide you through the application process step by step.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Alternative -->
+        <section class="quick-contact-alternative">
+            <div class="container">
+                <h2>Prefer to Talk Directly?</h2>
+                <p>Sometimes it's easier to have a conversation. Our program coordinators are available to answer your questions.</p>
+                <div class="contact-options">
+                    <a href="tel:+27311234567" class="cta-primary">Call Program Team: +27 31 123 4567</a>
+                    <a href="contact.html" class="cta-secondary">Visit Contact Page</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact RiseUp Youth Foundation</h3>
+                <p>Email: info@riseupyouth.org</p>
+                <p>Phone: +27 31 123 4567</p>
+                <p>Address: 123 Empowerment Street, Durban, South Africa</p>
+                <p>Office Hours: Monday-Friday 9am-5pm</p>
+            </div>
+
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programspage.html">Programs</a></li>
+                    <li><a href="getinvolved.html">Get Involved</a></li>
+                    <li><a href="enquiry.html">Enquire</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>Stay Informed</h3>
+                <p>Subscribe for program updates, application deadlines, and success stories.</p>
+                <form action="#">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="legal">
+            <p>NPO Registration: 123-456 | PBO Number: 930123456</p>
+            <p>&copy; 2025 RiseUp Youth Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
